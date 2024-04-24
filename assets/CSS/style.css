@@ -1,0 +1,62 @@
+/* common css 
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul,ol{
+   list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2{
+    margin: 0;
+}
+nav{
+    background-color:#02918c ;
+    height: 61px;
+}
+nav  .container{
+   width: 1170px;
+   margin: auto;
+}
+nav  .container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 61px;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+ text-transform: uppercase;
+ color: antiquewhite;
+ font-family: "Open Sans", sans-serif;
+ font-weight: 800;
+ padding: 0 25px;
+}
+nav ul li a:hover{
+    color: black;
+    /* transition: 2s; */
+   
+}
+nav ul li a {
+    position: relative;
+}
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color: rgb(242, 8, 8);
+    left: 0;
+    bottom: -19px;
+    transition: 0.5s;
+}
+nav ul li a:hover::before {
+    width: 100%;
+}
